@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 
 }
+body {
+    min-height: 100vh;
+}
+
 ul {
     list-style: none;
 }
@@ -19,21 +23,45 @@ a {
     transition: color 0.6s ease-in;
 }
 a:hover {
-    color: lawngreen;
+    color: darkblue;
 
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 20px 0 0 0;
 }
 #meuheader p:first-child {
     font-weight: bold;
 }
-section.destaque {
+/* section.destaque {
     color: red;
+} */
+header div {
+    display: inline-block;
+    text-align: right;
+    width: calc(100vw - 150px);
+    font-size: 16px;
+}
+header div p:first-child{
+    font-size: 2em;
+}
+
+header div p:first-child i {
+    font-size: 1.2em;
+    transition: all 0.8s ease-in-out;
+}
+header div p:first-child i:hover {
+    filter: drop-shadow(2px 2px 2px darkblue);
+}
+
+header {
+    filter: drop-shadow(0 3px 2px rgba(0,0,0,0.3))
 }
 
 aside p {
     font-weight: bold;
-}
-hr {
-    margin: 20px 0 0 0;
 }
 main, aside {
     margin: 20px 40px;
@@ -42,18 +70,29 @@ main, aside {
     background-color: rgb(218, 217, 216);
 }
 
+header, footer {
+    background-color: powderblue;
+    padding: 16px;
+
+}
+footer {
+    filter: drop-shadow(0 -3px 2px rgba(0,0,0,0.3));
+    font-size: 18px;
+    text-align: center;
+}
+
 img {
     border-radius: 50%;
     transition: all 0.8s ease-in-out;
-    border: 5px solid green;
+    border: 5px solid darkblue;
 }
 img:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.05);
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
     border: 5px solid blue;
 }
 
-a[href="#meuHeader"] {
+/* a[href="#meuHeader"] {
     background-color: crimson;
     color: #ffffff;
     border: 2px dotted rgb(0,0,0);
@@ -64,4 +103,5 @@ a[href="#meuHeader"] {
     width: fit-content;
     margin: 20px 40px;
     display: block;
-}
+    position: fixed;
+} */
